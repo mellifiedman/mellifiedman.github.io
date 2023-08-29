@@ -1,0 +1,46 @@
+@font-face {
+ 	font-family: 'alte_haas_groteskbold';
+    src: url('assets/altehaasgroteskbold-webfont.woff2') format('woff2'),
+   		 url('assets/altehaasgroteskbold-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+	font-family: 'alte_haas_groteskregular';
+    src: url('assets/altehaasgroteskregular-webfont.woff2') format('woff2'),
+       	 url('assets/altehaasgroteskregular-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+html{
+	font-family: 'alte_haas_groteskbold', sans-serif;
+	background: #FFF9DC;
+}
+h1{
+	font-size: 100px;
+	color: #BB181B;
+}
+.navbar li{
+	display: inline;
+	font-size: 50px;
+	margin: 20px;
+}
+.page a {
+	background-image: linear-gradient(to right, rgba(255,255,255,0) 50%, #BB181B 50%);
+	background-position: -0% 0;
+	background-size: 200% auto;
+	color: black;
+	text-decoration: none;
+	transition: background-position 0.5s ease-out;
+}
+.page a:hover {
+	background-position: -99.99% 0;
+	color: #FFF9DC;
+}
+.active a{
+	background: #BB181B;
+	background-position:-99.99% 0;
+	background-size: 200% auto;
+	text-decoration: none;
+	color: #FFF9DC;
+}
