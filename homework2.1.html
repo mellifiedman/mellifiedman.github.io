@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>homework 2.1</title>
+	<link rel="stylesheet" href="style.css">
+	<style type="text/css">
+		h1{
+			font-size: 75px;
+		}
+		.navbar li{
+			font-size: 35px;
+		}
+		.assignment{
+			text-align: center;
+		}
+		.content a{
+			font-size: 25px;
+			color: black;
+			text-decoration: none;
+		}
+		.content a:hover{
+			color: #BB181B;
+		}
+		#hidden li{
+			display: inline-block;
+			font-size: 100px;
+			padding: 15px;
+		}
+		button{
+			color: #FFF9DC;
+			background-color: #BB181B;
+			background: 200% auto;
+			border: none;
+			font-size: 25px;
+			font-family: 'alte_haas_groteskbold', sans-serif;
+		}
+		button:hover{
+			color: #BB181B;
+			background-color: #FFF9DC;
+			background: 200% auto;
+			border: #BB181B 2px;
+		}
+	</style>
+	<script type="text/javascript">
+		function toggleText() {
+  			var text = document.getElementById("hidden");
+  			if (text.style.display === "none"){
+  				text.style.display = "block";
+  			} else {
+  				text.style.display = "none";
+  			}
+		}
+	</script>
+</head>
+<body>
+	<h1>homework 2.1</h1>
+	<div class="navbar">
+		<ul>
+			<li class="active"><a href="homework_assignments.html">homework</a></li>
+			<li class="page"><a href="notes.html">notes</a></li>
+			<li class="page"><a href="about.html">about me</a></li>
+			<li class="page"><a href="homework1.html">back</a></li>
+		</ul>
+	</div>
+	<div class="content">
+		<div class="assignment">
+			<button onclick="toggleText()">click me</button>
+			<div id="hidden" style="display:none;">
+				<ul>
+					<li style="color:#BB181B;font-family:'times new roman',serif;font-weight:bold;">xy</li>
+					<li style="color:#0A2A4A;font-family:'arial',sans-serif;">12</li>
+					<li style="color:#397340;font-family:'impact',sans-serif;font-style:italic;">89</li>
+				</ul>
+			</div>
+		</div>
+		<p><a href="homework2.html">← back to homework 2</a><p>
+	</div>
+</body>
+</html>
