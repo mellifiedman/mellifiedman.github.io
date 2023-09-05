@@ -23,6 +23,10 @@
 		.content a:hover{
 			color: #BB181B;
 		}
+		#container{
+			height: 150px;
+			width: 100%;
+		}
 		#hidden li{
 			display: inline-block;
 			font-size: 100px;
@@ -66,12 +70,14 @@
 	</div>
 	<div class="content">
 		<div class="assignment">
+			<div id="container">
 			<div id="hidden" style="display:none;">
 				<ul>
 					<li style="color:#BB181B;font-family:'times new roman',serif;font-weight:bold;">xy</li>
 					<li style="color:#0A2A4A;font-family:'arial',sans-serif;">12</li>
 					<li style="color:#397340;font-family:'impact',sans-serif;font-style:italic;">89</li>
 				</ul>
+			</div>
 			</div>
 			<button onclick="toggleText()">click me</button>
 		</div>
